@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Now</title>
+    <link rel="stylesheet" href="styles.css">
+    <script >
+        function validateForm() {
+    let x = document.form["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    }
+    function validateForm() {
+    let x = document.forms["myForm"]["dob"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
+
+  function validateForm() {
+    let x = document.form["myForm"]["email"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    }
+    function validateForm() {
+    let x = document.form["myForm"]["password"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    }
+    function validateForm() {
+    let x = document.form["myForm"]["cpassword"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    else{
+    return true
+    }
+    }
+
+    </script> 
+</head>
+
+<body class="signup">
+    <div class="sign-in-form">
+        <img src="Male-user-info-icon.png" alt="">
+        <h1>Sign In</h1>
+        <form action="/actionpage.php" name="myform" onsignin="return validateForm()" method="post">
+            <label for="fname" class="email"><b>Name</b></label>
+            <input type="Full Name" class="input-box" placeholder="Full Name"   name="fname" required>
+            
+            <label for="dob" class="email"><b>DOB</b></label>
+            <input type="signin" class="input-box" placeholder="Ex:19-07-2000"    name="dob" required>
+            <label for="email" class="email"><b>Email</b></label>
+            <input type="signin" class="input-box" placeholder="Your Email"   name="email" required>
+            <label for="password" class="password"><b>Password</b></label>
+            <input type="signin" class="input-box" placeholder="Your password"    name="password" required>
+            <label for="cpassword" class="Password"><b>Confirm password</b></label>
+            <input type="signin " class="input-box" placeholder="Confirm Password"   name="cpassword" required>
+            <p><span><input type="checkbox"></span>I Agree all terms of sevices</p>
+        <button type="button" class="signup-btn" value="signin" ><a href="profile.html">Sign In</a> </button> 
+        <script src="index.js"></script>  
+</body>
+</html
